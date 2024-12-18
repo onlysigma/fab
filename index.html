@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1000px;
+            width: 100%;
+        }
+        .left-section {
+            flex: 1;
+            padding-right: 2rem;
+            text-align: left;
+        }
+        .left-section h1 {
+            color: #1877f2;
+            font-size: 3rem;
+            margin: 0;
+        }
+        .left-section p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .right-section {
+            flex: 1;
+            max-width: 400px;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .input-group {
+            margin-bottom: 1rem;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #dddfe2;
+            border-radius: 5px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .login-btn:hover {
+            background-color: #145dbf;
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #1877f2;
+            text-align: center;
+            text-decoration: none;
+        }
+        .create-account-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            background-color: #42b72a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        .create-account-btn:hover {
+            background-color: #36a420;
+        }
+        .create-page-text {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        .create-page-text a {
+            color: #1877f2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>facebook</h1>
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div class="right-section">
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Email address or phone number" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-btn">Log in</button>
+                <a href="#" class="forgot-password">Forgotten password?</a>
+                <button class="create-account-btn">Create new account</button>
+            </form>
+            <div class="create-page-text">
+                <p><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
